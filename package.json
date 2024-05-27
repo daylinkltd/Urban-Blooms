@@ -1,0 +1,31 @@
+{
+  "name": "daylink_admin_panel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "14.0.1",
+    "@react-oauth/google": "^0.12.1",
+    "bcryptjs": "^2.4.3",
+    "formidable": "^3.5.1",
+    "mongoose": "^8.2.2",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.0.1",
+    "next-auth": "^5.0.0-beta.3",
+    "next-connect": "^1.0.0",
+    "react": "18",
+    "react-dom": "18",
+    "react-icons": "4.11",
+    "recharts": "^2.9.0",
+    "use-debounce": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8",
+    "eslint-config-next": "14.0.1"
+  }
+}

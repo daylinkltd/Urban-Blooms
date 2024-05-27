@@ -1,0 +1,101 @@
+.main {
+  position: sticky;
+  top: 0;
+  margin: 0 10px;
+  z-index: 100;
+  border-radius: 10px;
+  background-color: var(--bgSoft);
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  padding: 10px;
+  color: var(--textSoft);
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.icons {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+}
+
+.userImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.userTitle {
+  font-size: 12px;
+  color: var(--textSoft);
+}
+
+.logout {
+  display: flex;
+
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 3px;
+  background: none;
+  border: none;
+  background-color: white;
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .title {
+    margin-right: 0; 
+    padding: 10px;
+  }
+
+  .menu {
+    justify-content: flex; /* Adjust menu alignment for smaller screens */
+    gap: 10px; /* Reduce gap between menu items */
+  }
+
+  .icons {
+    gap: 10px;
+    padding: 10px; /* Reduce gap between icons */
+  }
+
+  .user, .logout {
+    gap: 10px; /* Reduce gap between user details and logout button */
+  }
+}

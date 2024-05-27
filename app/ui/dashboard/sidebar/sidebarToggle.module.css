@@ -1,0 +1,23 @@
+.sidebarToggle {
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    padding: 3px;
+    cursor: pointer;/* Fix the button to the viewport */
+    z-index: 100; /* Ensure it is above the sidebar */
+    border: none;
+    align-items: center;
+}
+
+.sidebarToggle svg {
+    vertical-align: middle;
+}
+
+@media (max-width: 1080px) {
+    .sidebarToggle {
+        z-index: 99;
+        position: sticky;
+        left: 10px;
+        top: 20px;
+    }
+}
