@@ -1,7 +1,14 @@
+# Node js files are big so have to add it in gitignore
 node_modules
 
+#.next file is used for building and managing the project so it is not required in github
 .next
 
+# env file is used to store sensitive data so like passwords and required credentials to run the app
 .env
 
+
+# Ds_store is an file which constantly changes automatically and also not required in the github.
 .DS_Store
+
+.package-lock.json
